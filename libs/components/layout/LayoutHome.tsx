@@ -1,6 +1,5 @@
 import { Stack } from "@mui/material";
 import Head from "next/head";
-import { Component } from "react";
 
 
 const withLayoutMain = (Component: any) => {
@@ -19,8 +18,8 @@ const withLayoutMain = (Component: any) => {
 
          <Stack sx={{ background: "#a1887f"  }}>Footer</Stack>
          </Stack>
-    </>
-        )
+     </>
+    )
        
     };
 }

@@ -7,3 +7,10 @@ const PropertyDetail = () => {
 }
 
 export default withLayoutBasic(PropertyDetail)
+
+
+/* NEXT JS: 5 + tomonlari: 
+   ROUTING,
+    
+
+*/ 

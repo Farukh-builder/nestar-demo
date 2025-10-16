@@ -2,6 +2,7 @@ import { Stack } from "@mui/material";
 import Head from "next/head";
 import { title } from "process";
 import { Component } from "react";
+import Top from "../Top";
 
 
 const withLayoutBasic = (Component: any) => {
@@ -12,7 +13,23 @@ const withLayoutBasic = (Component: any) => {
             <title>Nestar</title>
          </Head>
          <Stack id="pc-wrap">
-          <Stack sx={{ background: "#81c784" }}>Header Basic</Stack>
+          <Stack id={"top"}>
+            <Top/>
+          </Stack>
+          
+          <Stack 
+            className={`header-basic`}
+            style={{
+                backgroundImage: 'url(/img/banner/properties.png)',
+                backgroundSize: "cover",
+                boxShadow: "inset 10px 40px 150px 40px rgb(24 22 36)",
+            }}
+          >
+            <Stack className={"container"}>
+               <strong>Property Search</strong>
+               <span>We are glad to see you again!</span>
+            </Stack>
+          </Stack>
 
           <Stack id={"main"}>
             <Component {...props} />

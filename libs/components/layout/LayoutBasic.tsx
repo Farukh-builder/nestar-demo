@@ -5,7 +5,6 @@ import { Component } from "react";
 import Top from "../Top";
 import Footer from "../Footer";
 
-
 const withLayoutBasic = (Component: any) => {
     return (props: any) => {
         return (

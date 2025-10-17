@@ -3,6 +3,7 @@ import Head from "next/head";
 import { title } from "process";
 import { Component } from "react";
 import Top from "../Top";
+import Footer from "../Footer";
 
 
 const withLayoutBasic = (Component: any) => {
@@ -26,7 +27,7 @@ const withLayoutBasic = (Component: any) => {
             }}
           >
             <Stack className={"container"}>
-               <strong>Property Search</strong>
+               <strong> Search</strong>
                <span>We are glad to see you again!</span>
             </Stack>
           </Stack>
@@ -35,7 +36,9 @@ const withLayoutBasic = (Component: any) => {
             <Component {...props} />
           </Stack>
 
-         <Stack sx={{ background: "#a1887f"  }}>Footer</Stack>
+         <Stack id={"footer"}>
+            <Footer/>
+         </Stack>
          </Stack>
     </>
         )
